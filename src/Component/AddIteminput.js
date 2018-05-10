@@ -3,7 +3,7 @@ import React from 'react';
 const AddIteminput = (props) => {
     return (
       <div className="col-md-5 add-todo-container">
-        <textarea className="textarea col-md-12"  placeholder="my todo content" value={props.selectedItem.title}
+        <textarea className="textarea col-md-12"  placeholder="Todo title" value={props.selectedItem.title}
             onChange={(e) => {
               props.onChangeInput(e.target.value, props.selectedItem.done)
             }

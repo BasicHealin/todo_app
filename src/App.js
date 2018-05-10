@@ -32,8 +32,6 @@ class App extends Component {
           done: newDone
         },
         updatingItem: true
-      }, () => {
-        console.log(this.state.updatingItem);
       })
     }
 
@@ -50,7 +48,6 @@ class App extends Component {
       if (title ==='')
         return;
       id = id ? id : `item-${this.state.Itemlist.length + 1}`;
-      console.log(id, title);
       this.setState({
         Itemlist: this.state.Itemlist.concat({
           id,
@@ -62,7 +59,7 @@ class App extends Component {
             title: "",
             done: false
           }
-      }, ()=>console.log(this.state.Itemlist))
+      })
     }
 
 

@@ -17,3 +17,6 @@
     font-size: 14px;
     cursor: pointer;
 }
+.txt-throught {
+  text-decoration: line-through;
+}
